@@ -22,8 +22,18 @@
     font-family: sans-serif;
 }
 
-.titre, .description {
+.titre, .description, .log_instagram, .cliquez{
     text-align: center;
+}
+
+.cliquez{
+    font-size: 2rem;
+    text-decoration: underline;
+    color: #214a82;
+    margin-bottom: 30px;
+}
+.logo2{
+    height: 100px;
 }
 
 
