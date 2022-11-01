@@ -1,0 +1,53 @@
+
+@import "../../vars";
+
+.header{
+    background-color: $bg-color-bleu;
+    width: 100%;
+    height: 53px;
+    display: flex;
+    justify-content: space-between;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    &_gauche{
+        display: flex;
+        &_image{
+            width: 39px;
+            align-self: center;
+            margin-left: 17px;
+            &_kiposetou{
+                width: 100%;
+            }
+        }
+        &_titre{
+            align-self: center;
+            color: $color-with-bleu;
+            margin-left: 15px;
+            font-size: 0.8rem;
+        }
+
+    }
+
+    &_menu{
+        display: flex;
+        border: 1px solid red;
+        gap:16px;
+        &_items{
+            align-self: center;
+            color: $color-with-bleu;
+            white-space:nowrap;
+        }
+    }
+
+    &_droite{
+        display: flex;
+        font-size: 0.8rem;
+        gap:16px;
+        margin-right: 17px;
+        &_bouton{
+            align-self: center;
+            color: $color-with-bleu;
+            white-space:nowrap;
+        }
+    }
+}
