@@ -2,12 +2,39 @@
 @import "../../vars";
 
 .header{
-    background-color: $bg-color-bleu;
+    background-color: $main-bg-color;
     width: 100%;
     height: 53px;
     display: flex;
     justify-content: space-between;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    //font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Sora';
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: relative;
+    
+    &_fabrication_france_bleu{
+        position: absolute;
+        background: rgb(42, 107, 178);
+        width: 100px;
+        height: 3px;
+        right: 50%;
+        transform: translate(-50%);
+    }
+    &_fabrication_france_rouge{
+        position: absolute;
+        background: rgb(178, 67, 42);
+        width: 100px;
+        height: 3px;
+        right: 50%;
+        transform: translate(150%);
+    }
+    &_fabrication_france_made_in_france{
+        position: absolute;
+        right: 50%;
+        transform: translate(50%);
+        font-size: 0.6rem;
+    }
 
     &_gauche{
         display: flex;
@@ -21,7 +48,7 @@
         }
         &_titre{
             align-self: center;
-            color: $color-with-bleu;
+            color: $main-color;
             margin-left: 15px;
             font-size: 0.8rem;
         }
@@ -30,11 +57,11 @@
 
     &_menu{
         display: flex;
-        border: 1px solid red;
+        //border: 1px solid red;
         gap:16px;
         &_items{
             align-self: center;
-            color: $color-with-bleu;
+            color: $main-color;
             white-space:nowrap;
         }
     }
@@ -44,10 +71,20 @@
         font-size: 0.8rem;
         gap:16px;
         margin-right: 17px;
+        
         &_bouton{
             align-self: center;
-            color: $color-with-bleu;
+            color: $bouton1-color;
             white-space:nowrap;
+            background-color: $bouton1-bg-color;
+            padding: 5px 4px;
+            border-radius: 8px;
+        }
+        &_rappel{
+            background-color: $bouton1-bg-color;
+            padding: 5px 4px;
+            border-radius: 8px;
+            border: 1px solid $border1-color; ;
         }
     }
 }
