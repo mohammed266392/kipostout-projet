@@ -1,6 +1,8 @@
 
 @import "../../vars";
 
+@media only screen and (min-width: 982px) {
+
 .header{
     background-color: $main-bg-color;
     width: 100%;
@@ -59,11 +61,42 @@
         display: flex;
         //border: 1px solid red;
         gap:16px;
+        align-items: stretch;
         &_items{
-            align-self: center;
+            //margin: auto;
+            display: flex;
             color: $main-color;
             white-space:nowrap;
+            cursor: pointer;
+            &_link{
+                margin: auto;
+            }
+            // &_realisation{
+
+            //     display: flex;
+            //     flex-direction: column;
+            //     position: absolute;
+            // }
+            &_realisation{
+                position: relative;
+                &_content{
+                    
+                    position: absolute;
+                    display: none;
+                    top: 80%;
+                    flex-direction: column;
+                    gap: 8px;
+                    padding-top: 10px;
+                    &-onglet{
+                        transition: all 0.3s ease-in-out;
+                    }
+                    &-onglet:hover{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
         }
+
     }
 
     &_droite{
@@ -79,6 +112,7 @@
             background-color: $bouton1-bg-color;
             padding: 5px 4px;
             border-radius: 8px;
+            font-weight: 300;
         }
         &_rappel{
             background-color: $bouton1-bg-color;
@@ -87,4 +121,114 @@
             border: 1px solid $border1-color; ;
         }
     }
+}
+}
+
+@media only screen and (max-width: 981px) {
+
+    .header{
+        background-color: $main-bg-color;
+        width: 100%;
+        height: 53px;
+        display: flex;
+        justify-content: space-between;
+        //font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Sora';
+        font-size: 0.8rem;
+        font-weight: bold;
+        position: relative;
+        &_menu-burger{
+            cursor: pointer;
+            width: 60px;
+            height: 100%;
+            position: relative;
+            border-radius: 15px;
+            &_bar-millieu{
+                display: block;
+                width: 80%;
+                height: 2px;
+                background-color: $main-color;
+                position: absolute;
+                top: 50%;
+                right: 50%;
+                transform: translate(50%, -50%); 
+            }
+            &_bar-millieu::before, &_bar-millieu::after{
+                content: '';
+                width: 100%;
+                height: 2px;
+                background-color: $main-color;
+                position: absolute;
+                transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1)
+            }
+
+            &_bar-millieu::before{
+                transform: translateY(-10px);
+            }
+            &_bar-millieu::after{
+                transform: translateY(10px);
+            }
+        }
+        &_menu-burger.active &_menu-burger_bar-millieu{
+            background-color: transparent;
+        }
+        
+        &_menu-burger.active &_menu-burger_bar-millieu::before{
+            transform: translateY(0px) rotate(-45deg);
+        }
+        
+        &_menu-burger.active &_menu-burger_bar-millieu::after{
+            transform: translateY(0px) rotate(45deg);
+        }
+        &_fabrication_france_bleu{
+            position: absolute;
+            background: rgb(42, 107, 178);
+            width: 100px;
+            top: 0;
+            height: 3px;
+            right: 50%;
+            transform: translate(-50%);
+        }
+        &_fabrication_france_rouge{
+            position: absolute;
+            background: rgb(178, 67, 42);
+            width: 100px;
+            top: 0px;
+            height: 3px;
+            right: 50%;
+            transform: translate(150%);
+        }
+        &_fabrication_france_made_in_france{
+            position: absolute;
+            right: 50%;
+            top: 0px;
+            transform: translate(50%);
+            font-size: 0.6rem;
+        }
+
+        &_gauche{
+            display: flex;
+            &_image{
+                width: 39px;
+                align-self: center;
+                margin-left: 17px;
+                &_kiposetou{
+                    width: 100%;
+                }
+            }
+            &_titre{
+                align-self: center;
+                color: $main-color;
+                margin-left: 15px;
+                font-size: 0.8rem;
+            }
+    
+        }
+        &_menu, &_droite{
+            display: none;
+        }
+    }
+
+
+
 }

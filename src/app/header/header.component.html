@@ -1,4 +1,5 @@
 <div class="header">
+    
     <div class="header_fabrication_france_bleu"></div>
     <div class="header_fabrication_france_rouge"></div>
     <div class="header_fabrication_france_made_in_france">made in france</div>
@@ -10,16 +11,29 @@
             KIPOSETOU MENUISERIE
         </div>
     </div>
-    <div class="header_menu">
-        <div class="header_menu_items"><a class="">Acceuil</a> </div>
-        <div class="header_menu_items"><a class="">A propos</a> </div>
-        <div class="header_menu_items"><a class="">Nos produits</a> </div>
-        <div class="header_menu_items"><a class="">Nos réalisation</a> </div>
-        <div class="header_menu_items"><a class="">Espace pro</a> </div>
-        <div class="header_menu_items"><a class="">Blog</a> </div>
-        <div class="header_menu_items"><a class="">Contact</a> </div>
+    <div class="header_menu-burger" (click)="afficheMenu()">
+        <span class="header_menu-burger_bar-millieu"></span>
     </div>
-
+    <div class="header_menu">
+        <div class="header_menu_items"><a class="header_menu_items_link">Acceuil</a> </div>
+        <div class="header_menu_items"><a class="header_menu_items_link">A propos</a> </div>
+        <div class="header_menu_items"><a class="header_menu_items_link">Nos produits</a></div>
+        <div class="header_menu_items header_menu_items_realisation" (click)="nosRealisation($event)"><a class="header_menu_items_link">Nos réalisation</a>
+            <div class="header_menu_items_realisation_content">
+                <a class="header_menu_items_realisation_content-onglet">Volets</a>
+                <a class="header_menu_items_realisation_content-onglet">Fenêtres</a>
+                <a class="header_menu_items_realisation_content-onglet">Portes</a>
+                <a class="header_menu_items_realisation_content-onglet">Portails</a>
+                <a class="header_menu_items_realisation_content-onglet">Pergolas</a>
+                <a class="header_menu_items_realisation_content-onglet">Couvertines</a>
+                <a class="header_menu_items_realisation_content-onglet">Appuis de Fenêtres Alu</a>
+                <a class="header_menu_items_realisation_content-onglet">Clôtures Alu/PVC</a>
+            </div>
+        </div>
+        <div class="header_menu_items"><a class="header_menu_items_link">Espace pro</a> </div>
+        <div class="header_menu_items"><a class="header_menu_items_link">Blog</a> </div>
+        <div class="header_menu_items"><a class="header_menu_items_link">Contact</a> </div>
+    </div>
     <div class="header_droite">
         <div class="header_droite_bouton header_droite_bouton_projet">DÉCRIRE MON PROJET</div>
         <div class="header_droite_bouton header_droite_bouton_rappel">ÊTRE RAPPELÉ</div>
