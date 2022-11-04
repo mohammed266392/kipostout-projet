@@ -1,8 +1,12 @@
 
 @import "../../vars";
 
+
 @media only screen and (min-width: 982px) {
 
+.header_menu-burger{
+    display: none;
+}
 .header{
     background-color: $main-bg-color;
     width: 100%;
@@ -59,6 +63,8 @@
     }
 
     &_menu{
+
+        all: none;
         display: flex;
         //border: 1px solid red;
         gap:16px;
@@ -88,6 +94,10 @@
                     flex-direction: column;
                     gap: 8px;
                     padding-top: 10px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    border-radius: 5px;
+                    background-color: white;
                     &-onglet{
                         transition: all 0.3s ease-in-out;
                     }
@@ -125,7 +135,10 @@
 }
 }
 
-@media only screen and (max-width: 981px) {
+@media only screen and (max-width: 982px) {
+
+
+    
 
     .header{
         background-color: $main-bg-color;
@@ -181,6 +194,9 @@
         &_menu-burger.active &_menu-burger_bar-millieu::after{
             transform: translateY(0px) rotate(45deg);
         }
+        &_menu.active{
+            width: 250px;
+        }
         &_fabrication_france_bleu{
             position: absolute;
             background: rgb(42, 107, 178);
@@ -226,11 +242,47 @@
             }
     
         }
-        &_menu, &_droite{
+        &_menu{
+            
+            position: absolute;
+            right: 0px;
+            top: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 60vh;
+            //width: 22%;
+            width: 0%;
+            background-color: rgba(0, 0, 0, 0.784);
+            border-radius: 2px;
+            color: white;
+            overflow: hidden;
+            transition: width 0.5s ease-in-out;
+            //padding: 10px;
+            //transition: all 0.3s ease-in-out;
+
+            &_items{
+                //align-self: end;
+                white-space: nowrap;
+                padding-left: 10px;
+                &_realisation{
+                    display: none;
+                }
+            }
+           
+        }
+        
+        
+
+        &_droite{
             display: none;
         }
+        //&_menu, &_droite{
+        //    display: none;
+        //}
     }
-
+    
+    
 
 
 }
