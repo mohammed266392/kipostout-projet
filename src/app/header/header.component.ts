@@ -32,23 +32,59 @@ export class HeaderComponent implements OnInit {
 
   nosRealisation(event : Event){
     console.log("j'ai cliqué sur nos réalisation",event);
-    const divRealisation = event.composedPath();
-    console.log("event ",divRealisation[1]);
-    const divContent : HTMLDivElement = document.querySelector('.header_menu_items_realisation_content') as HTMLDivElement;
-    if(divContent.style.display == "flex"){
-      divContent.style.display = "none";
+    event.stopPropagation();
+    // const divRealisation = event.composedPath();
+    // console.log("event ",divRealisation[1]);
+    const divMenuWidth : HTMLDivElement = document.querySelector('.header_menu') as HTMLDivElement;
+    const divContentRealisations : HTMLDivElement = document.querySelector('.header_menu_items_realisation_content') as HTMLDivElement;
+    const divMenuItems : NodeListOf<HTMLDivElement> = document.querySelectorAll('.header_menu_items') as NodeListOf<HTMLDivElement>;
+
+    divMenuItems.forEach(element => {
+      element.classList.toggle('realisation-active');
+    });
+    divMenuWidth.classList.toggle('realisation-active');
+    if(divMenuWidth.classList.contains('realisation-active')){
+      divContentRealisations.classList.add("active");
     }else{
-      divContent.style.display = "flex";
+      divContentRealisations.classList.remove("active");
     }
+    
+  
+
     
   }
 
   afficheMenu(){
     console.log("j'affiche le menu");
-    const btn  : HTMLDivElement = document.querySelector('.header_menu-burger') as HTMLDivElement ;
-    const btn1  : HTMLDivElement = document.querySelector('.header_menu') as HTMLDivElement ;
-    btn.classList.toggle('active');
-    btn1.classList.toggle('active');
+    const divImageMenuBurger  : HTMLDivElement = document.querySelector('.header_menu-burger') as HTMLDivElement ;
+    const divModaleMenuMobile  : HTMLDivElement = document.querySelector('.header_menu') as HTMLDivElement ;
+    const divActivated  : NodeListOf<HTMLDivElement> = document.querySelectorAll('.active,.realisation-active') as NodeListOf<HTMLDivElement> ;
+    //const btnRealisation  : HTMLDivElement = document.querySelector('.header_menu_items_realisation_content') as HTMLDivElement ;
+    //const divContent : HTMLDivElement = document.querySelector('.header_menu_items_realisation_content') as HTMLDivElement;
+    //const divMenuItems : NodeListOf<HTMLDivElement> = document.querySelectorAll('.header_menu_items') as NodeListOf<HTMLDivElement>;
+    //const divClassActive : NodeListOf<HTMLDivElement> = document.querySelectorAll('.active') as NodeListOf<HTMLDivElement>;
+
+
+
+    divImageMenuBurger.classList.toggle('active');
+    divModaleMenuMobile.classList.toggle('active');
+    if(!divImageMenuBurger.classList.contains('active')){
+      
+      divActivated.forEach(element => {
+        element.classList.remove('realisation-active');
+        element.classList.remove('active');
+      });
+    }
+      //btnRealisation.classList.remove('active');
+      //divMenu.classList.remove('realisation-active');
+    //   divMenuItems.forEach(element => {
+    //     element.classList.remove('realisation-active');
+    //   });
+    // }
+    //   divMenu.classList.remove('close');
+    // }else{
+    //   btn1.classList.add('close');
+    // }
     // const btn1  : HTMLDivElement = document.querySelector('.header_menu') as HTMLDivElement ;
     // if(!this.modaleMobileMenu){
     //   //btn1.classList.toggle('width30');
@@ -62,7 +98,6 @@ export class HeaderComponent implements OnInit {
   }
 
   afficheMenuMobile(){
-  
     console.log("j'affiche le menu en mobile");
   }
 
