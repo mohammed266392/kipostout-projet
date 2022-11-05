@@ -14,6 +14,7 @@ export class CeQueVousProposeeComponent implements OnInit {
 
   clickButton(event : Event){
     console.log("cliquez sur le bouton");
+    
   }
 
 }
