@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ClickStopPropagationDirective } from './directive/click-stop-propagation.directive';
+import { CeQueVousProposeeComponent } from './ce-que-vous-proposee/ce-que-vous-proposee.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AccueilComponent,
-    ClickStopPropagationDirective
+    ClickStopPropagationDirective,
+    CeQueVousProposeeComponent
   ],
   imports: [
     BrowserModule,
