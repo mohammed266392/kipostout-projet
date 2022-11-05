@@ -255,17 +255,11 @@
             }
     
         }
-        .header_menu_wrapper{
-            position: absolute;
-            right: 0px;
-            top: 100%;
-            //transform: scale(1);
-        }
+       
         &_menu.active.realisation-active{
             width: 350px;
         }
         &_menu{
-            //transform: scale(1);
             position: absolute;
             right: 0px;
             top: 100%;
@@ -274,24 +268,21 @@
             justify-content: space-evenly;
             align-items: flex-start;
             height: 70vh;
-            //width: 22%;
             width: 0%;
             background-color: rgba(0, 0, 0, 0.784);
             border-radius: 2px;
             color: white;
             overflow: hidden;
             transition: width 0.5s ease-in-out;
-            //transition: align-items 0.5s ease-in-out;
-            //padding: 10px;
-            //transition: all 0.3s ease-in-out;
             
+            &_items.realisation-active{
+                margin-left: calc(100% - 166px);
+            }
             &_items.realisation-active{
                 margin-left: calc(100% - 166px);
             }
 
             &_items{
-                //align-self: end;
-                //overflow: hidden;
                 white-space: nowrap;
                 padding-left: 10px;
                 cursor: pointer;
@@ -302,19 +293,14 @@
                         display: none;
                     }
                     &_content.active{
-                        //position: absolute;
-                        // display: flex;
-                        // flex-direction: column;
-                        // position: fixed;
-                        // width: 200px;
-                        // left: calc(100% - 250px - 200px);
-                        // background-color: rgba(0, 0, 0, 0.784);
+                       
                         display: flex;
                         flex-direction: column;
                         //gap: 10px;
                         position: absolute;
                         right: 100%;
-                        height: 181px;
+                        bottom: -118px;
+                        height: 220px;
                         justify-content: space-between;
                     }
                     &_content.active &_content-onglet{
@@ -326,7 +312,11 @@
                     }
                     
                 }
-               
+                
+                &_link.active{
+                    font-size: 1.2em;
+                    color: #f6c546;
+                }
                
                 &_link-projet{
                     border-radius: 2px;
@@ -343,73 +333,10 @@
            
         }
         &_menu.active{
-            width: 250px;
+            width: 210px;
         }
-        // &_menu.active{
-        //     // width: 250px;
-        //     animation-name: slidemenumobileopen;
-        //     animation-duration: 0.5s;
-        //     animation-iteration-count: 1;
-        //     //animation-timing-function: cubic-bezier(1, 0.03, 0.58, 1);
-        //     animation-timing-function: linear;
-        //     animation-fill-mode: forwards;
-            
-        // }
-        // &_menu.close{
-        //     // width: 250px;
-        //     animation-name: slidemenumobileclose;
-        //     animation-duration: 0.5s;
-        //     animation-iteration-count: 1;
-        //     animation-timing-function: linear;
-        //     animation-fill-mode: forwards;
-        // }
-        // &_menu.active.nos-realisations{
-        //     overflow:inherit;
-        // }
-
         &_droite{
             display: none;
         }
-        //&_menu, &_droite{
-        //    display: none;
-        //}
     }
-
-    // @keyframes slidemenumobileopen {
-    //     0%{
-    //         width: 0px;
-    //     }
-    //     50%{
-    //         width: 250px;
-    //     }
-    //     100%{
-    //         width: 250px;
-    //         overflow:inherit;
-    //         // .header_menu{
-    //         //     overflow:inherit;
-    //         // }
-    //     }
-    //     // from {
-    //     //     width: 0px;
-    //     //   }
-        
-    //     // to {
-    //     // width: 250px;
-    //     // overflow: initial;
-    //     // }
-        
-    // }
-    // @keyframes slidemenumobileclose {
-    //     100%{
-    //         width: 0px;
-    //     }
-    //     0%{
-    //         width: 250px;
-    //     }
-        
-    // }
-    
-    
-
-
 }

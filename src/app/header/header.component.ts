@@ -32,12 +32,13 @@ export class HeaderComponent implements OnInit {
 
   nosRealisation(event : Event){
     console.log("j'ai cliqué sur nos réalisation",event);
-    event.stopPropagation();
     // const divRealisation = event.composedPath();
     // console.log("event ",divRealisation[1]);
     const divMenuWidth : HTMLDivElement = document.querySelector('.header_menu') as HTMLDivElement;
     const divContentRealisations : HTMLDivElement = document.querySelector('.header_menu_items_realisation_content') as HTMLDivElement;
     const divMenuItems : NodeListOf<HTMLDivElement> = document.querySelectorAll('.header_menu_items') as NodeListOf<HTMLDivElement>;
+    const divLinkRealisation : HTMLDivElement = event.composedPath()[0] as HTMLDivElement;;
+
 
     divMenuItems.forEach(element => {
       element.classList.toggle('realisation-active');
@@ -45,8 +46,11 @@ export class HeaderComponent implements OnInit {
     divMenuWidth.classList.toggle('realisation-active');
     if(divMenuWidth.classList.contains('realisation-active')){
       divContentRealisations.classList.add("active");
+      divLinkRealisation.classList.add("active");
+
     }else{
       divContentRealisations.classList.remove("active");
+      divLinkRealisation.classList.remove("active");
     }
     
   
