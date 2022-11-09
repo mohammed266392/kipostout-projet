@@ -14,7 +14,12 @@ export class CeQueVousProposeeComponent implements OnInit {
 
   clickButton(event : Event){
     console.log("cliquez sur le bouton");
-    
+    console.log(event.composedPath()[0]);
+    console.log(event.composedPath());
+    const divPlus :  HTMLDivElement = event.composedPath()[0] as HTMLDivElement ;
+
+    divPlus.classList.toggle('active');
+    divPlus.nextElementSibling?.classList.toggle('active');
   }
 
 }
