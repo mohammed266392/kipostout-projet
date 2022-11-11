@@ -47,7 +47,7 @@
 
         position: absolute;
         left: 5%;
-        top: 56%;
+        top: 296px;
         z-index: 0;
         &_img1{
             width: 263px;
@@ -58,7 +58,7 @@
 
         position: absolute;
         right: 5%;
-        top: 6%;
+        top: 14px;
         z-index: 2;
         &_img2{
             width: 263px;
@@ -101,21 +101,10 @@
         height: 110px;
     }
 
-
-}
-
-
-@media only screen and (max-width: 400px) {
-
-    .realisation_img_fenetre1{
-        top: 42%;
-    }
-
     .realisation_img_fenetre2{
-        top: 4%;
+        top: 25px;
     }
 
-    
 
 }
 
