@@ -19,6 +19,7 @@
     align-self: center;
     margin: auto;
     overflow: hidden;
+    width: 0px;
     white-space: nowrap;
     font-weight: 500;
     padding-top: 5px;
@@ -34,7 +35,7 @@
     animation-fill-mode: forwards;
 }
 
-@media only screen and (min-width: 982px) {
+@media only screen and (min-width: 992px) {
 
 @keyframes movetextetitle {
     from { width: 0px;  }
@@ -42,7 +43,7 @@
   }
 }
 
-@media only screen and (max-width: 982px) {
+@media only screen and (max-width: 992px) {
     .main_title_texte{
         display: flex;
         flex-wrap: wrap;

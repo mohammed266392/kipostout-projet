@@ -9,18 +9,20 @@
     justify-content: space-between;
     font-size: 0.8rem;
     font-weight: bold;
-    // position: sticky;
+    position: sticky;
     top: 0;
 }
 
 @media only screen and (min-width: 992px) {
+//@media only screen and (min-width: 600px) {
 
-.header_menu-burger{
+
+    .header_menu-burger{
     display: none;
 }
 .header{
     
-    overflow: hidden;
+    //overflow: hidden;
     
     &_fabrication_france_bleu{
         position: absolute;
@@ -72,7 +74,7 @@
         all: none;
         display: flex;
         //border: 1px solid red;
-        gap:16px;
+        gap:15px;
         align-items: stretch;
         &_items{
             //margin: auto;
@@ -129,8 +131,8 @@
     &_droite{
         display: flex;
         font-size: 0.8rem;
-        gap:16px;
-        margin-right: 17px;
+        gap:10px;
+        margin-right: 10px;
         
         &_bouton{
             align-self: center;
