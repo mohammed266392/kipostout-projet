@@ -94,9 +94,28 @@
     }
     .realisation_img_fenetre2_img2{
         width: 146px;
-        height: 106px;
+        height: 100px;
+    }
+    .realisation_img_fenetre1_img1{
+        width: 200px;
+        height: 110px;
     }
 
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    .realisation_img_fenetre1{
+        top: 42%;
+    }
+
+    .realisation_img_fenetre2{
+        top: 4%;
+    }
+
+    
 
 }
 
