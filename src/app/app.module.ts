@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ClickStopPropagationDirective } from './directive/click-stop-propagation.directive';
 import { CeQueVousProposeeComponent } from './ce-que-vous-proposee/ce-que-vous-proposee.component';
+import { RealisationComponent } from './realisation/realisation.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CeQueVousProposeeComponent } from './ce-que-vous-proposee/ce-que-vous-p
     HeaderComponent,
     AccueilComponent,
     ClickStopPropagationDirective,
-    CeQueVousProposeeComponent
+    CeQueVousProposeeComponent,
+    RealisationComponent
   ],
   imports: [
     BrowserModule,
