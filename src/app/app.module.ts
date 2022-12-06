@@ -8,6 +8,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ClickStopPropagationDirective } from './directive/click-stop-propagation.directive';
 import { CeQueVousProposeeComponent } from './ce-que-vous-proposee/ce-que-vous-proposee.component';
 import { RealisationComponent } from './realisation/realisation.component';
+import { EtapeSliderComponent } from './etape-slider/etape-slider.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RealisationComponent } from './realisation/realisation.component';
     AccueilComponent,
     ClickStopPropagationDirective,
     CeQueVousProposeeComponent,
-    RealisationComponent
+    RealisationComponent,
+    EtapeSliderComponent
   ],
   imports: [
     BrowserModule,

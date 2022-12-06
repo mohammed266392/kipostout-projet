@@ -1,0 +1,88 @@
+
+.main{
+    background-color: aqua;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    &_container{
+        display: flex;
+        margin: auto;
+        &_slider{
+            background-color: green;
+            width: 50px;
+            height: 440px;
+            display: flex;
+            align-items: center;
+            &_container{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                background-color: beige;
+                height: 250px;
+                margin: auto;
+            }
+        }
+        &_position{
+            position: relative;
+            background-color: #78235e;
+            width: 400px;
+            height: 440px;
+            overflow: hidden;
+            &_content{
+                position: absolute;
+                height: 150px;
+                &_etape,&_etape-title,&_etape-description{
+                    text-align: center;
+                } 
+            }
+            
+        }
+    }
+}
+
+.cercle {
+    width: 5px;
+    height: 5px;
+    border-radius: 20px;
+    border: 1px solid rgb(42, 56, 21);
+}
+.remplit{
+    width: 10px;
+    height: 10px;
+    background-color:rgb(42, 56, 21) ;
+}
+.etape1{
+    top: 0px;
+}
+.etape2{
+    top: 150px;
+}
+.etape3{
+    top: 300px;
+}
+.etape4{
+    top: 450px;
+}
+
+@media only screen and (max-width: 820px) {
+    
+    .main_container_position{
+        width: 300px;
+    }
+    .main_container_slider{
+        width: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 530px) {
+    
+    .main_container_position{
+        width: 250px;
+    }
+    .main_container_slider{
+        width: 15px;
+    }
+
+}
