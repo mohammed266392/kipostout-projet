@@ -99,12 +99,15 @@
 }
 
 @media only screen and (max-width: 530px) {
-    
     .main_container_position{
         width: 250px;
+        overflow: scroll;
     }
     .main_container_slider{
-        width: 15px;
+        display: none;
+        // width: 5px;
+        // background-color: aquamarine;
+        // height: 0px;
     }
     .main_container_slider_container_div{
         padding: 20px 10px;
@@ -115,5 +118,9 @@
         padding-right: 10px;
         font-size: 0.8em ;
     }
+    .main_container_slider_container{
+        display: none;
+    }
+
 
 }
