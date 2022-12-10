@@ -1,6 +1,8 @@
 
+@import "./../../vars.scss";
+
 .main{
-    background-color: aqua;
+    // background-color: aqua;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -8,7 +10,7 @@
         display: flex;
         margin: auto;
         &_slider{
-            background-color: green;
+            // background-color: green;
             width: 50px;
             height: 440px;
             display: flex;
@@ -18,21 +20,39 @@
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
-                background-color: beige;
+                // background-color: beige;
                 height: 250px;
+                width: 100%;
                 margin: auto;
+                &_div{
+                    padding: 20px 10px;
+                }
             }
         }
         &_position{
             position: relative;
-            background-color: #78235e;
+            background-color: $main-color;
             width: 400px;
             height: 440px;
             overflow: hidden;
             &_content{
+                color: white;
                 position: absolute;
-                height: 150px;
-                &_etape,&_etape-title,&_etape-description{
+                height: 440px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 40px;
+                &_etape{
+                    font-size: 2.1em;
+                    font-weight: bolder;
+                    text-align: center;
+                }
+                &_etape-title{
+                    font-size: 1.5em;
+                    text-align: center;
+                }
+                &_etape-description{
                     text-align: center;
                 } 
             }
@@ -45,24 +65,25 @@
     width: 5px;
     height: 5px;
     border-radius: 20px;
-    border: 1px solid rgb(42, 56, 21);
+    // border: 1px solid rgb(42, 56, 21);
+    border: 1px solid $main-color;
 }
 .remplit{
     width: 10px;
     height: 10px;
-    background-color:rgb(42, 56, 21) ;
+    background-color:$main-color ;
 }
 .etape1{
     top: 0px;
 }
 .etape2{
-    top: 150px;
+    top: 440px;
 }
 .etape3{
-    top: 300px;
+    top: 880px;
 }
 .etape4{
-    top: 450px;
+    top: 1320px;
 }
 
 @media only screen and (max-width: 820px) {
@@ -83,6 +104,9 @@
     }
     .main_container_slider{
         width: 15px;
+    }
+    .main_container_slider_container_div{
+        padding: 20px 10px;
     }
 
 }

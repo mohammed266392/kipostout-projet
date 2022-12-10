@@ -9,6 +9,7 @@ import { ClickStopPropagationDirective } from './directive/click-stop-propagatio
 import { CeQueVousProposeeComponent } from './ce-que-vous-proposee/ce-que-vous-proposee.component';
 import { RealisationComponent } from './realisation/realisation.component';
 import { EtapeSliderComponent } from './etape-slider/etape-slider.component';
+import { EtapeService } from './services/etape.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { EtapeSliderComponent } from './etape-slider/etape-slider.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [EtapeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
