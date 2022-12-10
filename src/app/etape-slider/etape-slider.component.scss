@@ -35,6 +35,7 @@
             width: 400px;
             height: 440px;
             overflow: hidden;
+            border-radius: 5px;
             &_content{
                 color: white;
                 position: absolute;
@@ -107,6 +108,12 @@
     }
     .main_container_slider_container_div{
         padding: 20px 10px;
+    }
+    .main_container_position{
+        width: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 0.8em ;
     }
 
 }
