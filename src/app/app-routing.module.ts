@@ -3,12 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { AccueilComponent } from './accueil/accueil.component';
 
 const routes: Routes = [
-  
 
-  {path: 'accueil', component : AccueilComponent},
-  { path: '404', component: AccueilComponent },
-  {path: '', redirectTo: 'accueil', pathMatch:"full"},
-  {path: '**', redirectTo: 'accueil', pathMatch:"full"}
+  {path: '', redirectTo: 'Accueil', pathMatch:"full"},
+  {path: 'Accueil', component : AccueilComponent},
+  {path: '**', component : AccueilComponent}
 ];
 
 @NgModule({
