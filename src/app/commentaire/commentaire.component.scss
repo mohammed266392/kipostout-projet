@@ -1,0 +1,64 @@
+.main2_block4_avis{
+    height: 500px;
+    position: relative;
+  
+  }
+  .main2_block4_avis_title{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  .main2_block4_avis_box{
+    /* border: 2px solid red; */
+    width: 43%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+  .main2_block4_avis_box_block{
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    top: 30px;
+    
+  }
+  .main2_block4_avis_box_block_personne, .main2_block4_avis_box_block_texte, .main2_block4_avis_box_block_etoile{
+    text-align: center;
+    width: 55%;
+    align-self: center;
+  }
+  .main2_block4_avis_box_block_personne{
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+  .main2_block4_avis_box_block_texte{
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+  .fleche_droite_avis{
+    transform: rotateZ(90deg);
+    width: 40px;
+      height: 40px;
+    position: absolute;
+    top: 43%;
+    right: 25%;
+  }
+  .fleche_gauche_avis{
+    transform: rotateZ(270deg);
+    width: 40px;
+      height: 40px;
+    position: absolute;
+    top: 43%;
+    left: 25%;
+  }
+  .etoile_avis{
+    width: 5%;
+  }

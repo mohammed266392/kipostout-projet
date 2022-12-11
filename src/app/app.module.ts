@@ -10,6 +10,7 @@ import { CeQueVousProposeeComponent } from './ce-que-vous-proposee/ce-que-vous-p
 import { RealisationComponent } from './realisation/realisation.component';
 import { EtapeSliderComponent } from './etape-slider/etape-slider.component';
 import { EtapeService } from './services/etape.service';
+import { CommentaireComponent } from './commentaire/commentaire.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EtapeService } from './services/etape.service';
     ClickStopPropagationDirective,
     CeQueVousProposeeComponent,
     RealisationComponent,
-    EtapeSliderComponent
+    EtapeSliderComponent,
+    CommentaireComponent
   ],
   imports: [
     BrowserModule,
