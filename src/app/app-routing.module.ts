@@ -4,10 +4,11 @@ import { AccueilComponent } from './accueil/accueil.component';
 
 const routes: Routes = [
   
-  {path: '', redirectTo: '/accueil', pathMatch:"full"},
-  {path: '**', redirectTo: '/accueil', pathMatch:"full"},
+
   {path: 'accueil', component : AccueilComponent},
-  
+  { path: '404', component: AccueilComponent },
+  {path: '', redirectTo: 'accueil', pathMatch:"full"},
+  {path: '**', redirectTo: 'accueil', pathMatch:"full"}
 ];
 
 @NgModule({
