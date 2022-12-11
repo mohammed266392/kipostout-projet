@@ -3,12 +3,23 @@
 
 .main{
     // background-color: aqua;
+    position: relative;
     height: 90vh;
     display: flex;
     align-items: center;
+    &_img{
+        position: absolute;
+        right: 97px;
+        height: 577px;
+        width: 70%;
+        background-image: url("./../../assets/images/istockphoto-1362702978-1024x1024.jpg");
+    }
     &_container{
+        position: absolute;
+        left: 83px;
         display: flex;
         margin: auto;
+
         &_slider{
             // background-color: green;
             width: 50px;
@@ -99,6 +110,12 @@
 }
 
 @media only screen and (max-width: 530px) {
+    .main_img{
+        display: none;
+    }
+    .main_container{
+        position: initial;
+    }
     .main_container_position{
         width: 250px;
         overflow: scroll;

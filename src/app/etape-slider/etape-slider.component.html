@@ -1,7 +1,8 @@
 
 <div class="main">
+    <div class="main_img"></div>
     <div class="main_container">
-        <div  class="main_container_slider" [ngStyle]="{'height' :heigthContainerSlider }">
+        <div  class="main_container_slider">
             <div class="main_container_slider_container" >
                 <div *ngFor="let etape of etapes" class="main_container_slider_container_div" (click)="changePosition(etape.etapePosition)">
                     <!-- (click)="changePosition(etape.etapePosition)" -->
