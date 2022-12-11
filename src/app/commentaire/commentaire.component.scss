@@ -11,7 +11,7 @@
   }
   .main2_block4_avis_box{
     /* border: 2px solid red; */
-    width: 43%;
+    width: 400px;
     height: 300px;
     margin: auto;
     display: flex;
@@ -62,3 +62,40 @@
   .etoile_avis{
     width: 5%;
   }
+  @media only screen and (max-width: 820px) {
+    
+    .main2_block4_avis_box{
+        width: 300px;
+        height: 250px;
+    }
+    .fleche_droite_avis{
+        width: 30px;
+        height: 30px;
+    }
+    .fleche_gauche_avis{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 530px) {
+
+    .main2_block4_avis_box{
+        width: 250px;
+        height: 250px;
+    }
+    .fleche_droite_avis{
+        width: 20px;
+        height: 20px;
+        right: 20%;
+    }
+    .fleche_gauche_avis{
+        width: 20px;
+        height: 20px;
+        left: 20%;
+    }
+
+   
+}
+
