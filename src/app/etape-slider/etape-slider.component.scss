@@ -1,5 +1,11 @@
 
 @import "./../../vars.scss";
+.title{
+    position: relative;
+    top: -90px;
+    text-align: center;
+    font-size: 2em;
+}
 
 .main{
     // background-color: aqua;
@@ -110,6 +116,10 @@
 }
 
 @media only screen and (max-width: 530px) {
+    .title{
+        top: -30px;
+        font-size: 1.2em;
+    }
     .main_img{
         display: none;
     }

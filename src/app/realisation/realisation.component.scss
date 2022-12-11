@@ -1,8 +1,7 @@
 @import "../../vars";
 
 .realisation{
-    height: 100vh;
-    
+    height: 800px;
     // background-color: rgb(223, 64, 64);
     // border: 3px solid green;
     position: relative;
@@ -89,6 +88,9 @@
 
 @media only screen and (max-width: 530px) {
 
+    .realisation{
+        height: 550px;
+    }
     .realisation_block_decouvrir{
         width: 310px;
     }
