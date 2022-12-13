@@ -8,7 +8,7 @@
 }
 
 .main{
-    // background-color: aqua;
+    //background-color: aqua;
     position: relative;
     height: 90vh;
     display: flex;
@@ -117,11 +117,20 @@
 
 @media only screen and (max-width: 530px) {
     .title{
-        top: -10px;
+        //top: -10px;
+        top: -73px;
         font-size: 2em;
     }
     .main_img{
-        display: none;
+        //display: none;
+        z-index: 1;
+        right: 50%;
+        top: 5%;
+        transform: translate(50%, -50%);
+        height: 178px;
+        width: 290px;
+        background-position-x: -7px;
+        background-position-y: -354px;
     }
     .main_container{
         position: initial;
