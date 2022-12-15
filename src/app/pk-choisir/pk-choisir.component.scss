@@ -1,0 +1,60 @@
+.main{
+    &_title{
+        text-align: center;
+        font-size: 2.5em;
+    }
+}
+
+.main2_block3{
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  .main2_block3_title{
+    text-align: center;
+    font-size: 2rem;
+  }
+  .main2_block3_numero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+  }
+  .main2_block3_numero_box{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+  }
+  .numero_block{
+    margin-top: 80px;
+    margin-bottom: 35px;
+    text-align: center;
+      
+  }
+  .numero_text{
+      width: 300px;
+      text-align: center;
+      align-self: center;
+  }
+  .number_span{
+    color: white;
+    background-color:#214a82;
+    padding: 23px;
+    border-radius: 50%;
+  }
+  .main2_block3_button{
+    margin-top: 80px;
+    text-align: center;
+  }
+  .main2_block3_button_devis{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow:   #214a82 0px 54px 55px, #214a82 0px -12px 30px, #214a82 0px 4px 6px, #214a82 0px 12px 13px, #214a82 0px -3px 5px;
+    transition: all 0.3s ease-out;
+  }
+  .main2_block3_button_devis:hover{
+    color: rgb(255, 255, 255);
+    background-color: #214a82;
+  
+  }

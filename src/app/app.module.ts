@@ -11,6 +11,7 @@ import { RealisationComponent } from './realisation/realisation.component';
 import { EtapeSliderComponent } from './etape-slider/etape-slider.component';
 import { EtapeService } from './services/etape.service';
 import { CommentaireComponent } from './commentaire/commentaire.component';
+import { PkChoisirComponent } from './pk-choisir/pk-choisir.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CommentaireComponent } from './commentaire/commentaire.component';
     CeQueVousProposeeComponent,
     RealisationComponent,
     EtapeSliderComponent,
-    CommentaireComponent
+    CommentaireComponent,
+    PkChoisirComponent
   ],
   imports: [
     BrowserModule,
