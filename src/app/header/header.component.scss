@@ -13,6 +13,9 @@
     top: 0;
     z-index: 5;
 }
+.header_droite_bouton_projet, .header_droite_bouton_rappel{
+    cursor: pointer;
+}
 
 @media only screen and (min-width: 992px) {
 //@media only screen and (min-width: 600px) {
@@ -50,6 +53,7 @@
     }
 
     &_gauche{
+        cursor: pointer;
         display: flex;
         &_image{
             width: 39px;

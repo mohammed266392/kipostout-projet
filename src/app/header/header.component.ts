@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { BreakpointObserver } from '@angular/cdk/layout';
 export class HeaderComponent implements OnInit {
   modaleMobileMenu : boolean = false;
   showContainer: boolean = false;
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit(): void {
   }
@@ -58,5 +59,13 @@ export class HeaderComponent implements OnInit {
   afficheMenuMobile(){
     console.log("j'affiche le menu en mobile");
   }
-
+  goToTheAcceuil(){
+    this.router.navigate(['Acceuil']);
+  }
+  goToTheDecrireProjet(){
+    this.router.navigate(['Decrire-mon-projet']);
+  }
+  goToTheEtreRappele(){
+    this.router.navigate(['Etre-rappele']);
+  }
 }

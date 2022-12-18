@@ -12,6 +12,8 @@ import { EtapeSliderComponent } from './etape-slider/etape-slider.component';
 import { EtapeService } from './services/etape.service';
 import { CommentaireComponent } from './commentaire/commentaire.component';
 import { PkChoisirComponent } from './pk-choisir/pk-choisir.component';
+import { DecrireTonProjetComponent } from './decrire-ton-projet/decrire-ton-projet.component';
+import { EtreRappeleComponent } from './etre-rappele/etre-rappele.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { PkChoisirComponent } from './pk-choisir/pk-choisir.component';
     RealisationComponent,
     EtapeSliderComponent,
     CommentaireComponent,
-    PkChoisirComponent
+    PkChoisirComponent,
+    DecrireTonProjetComponent,
+    EtreRappeleComponent
   ],
   imports: [
     BrowserModule,
