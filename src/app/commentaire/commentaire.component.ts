@@ -15,6 +15,7 @@ export class CommentaireComponent implements OnInit {
 
   ngOnInit(): void {
     this.commentaires = this.commentaireService.initalisationCommentaire();
+    console.log('mes commentaires : ', this.commentaires);
   }
 
   slideAdroite(){
@@ -39,7 +40,7 @@ export class CommentaireComponent implements OnInit {
 
   tournerADroite(){
     console.log("mon indexe : ",this.indexAvis);
-    if(this.indexAvis<3){
+    if(this.indexAvis<this.commentaires.length){
         this.indexAvis++;
         this.slideAdroite();
         

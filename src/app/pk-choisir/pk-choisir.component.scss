@@ -1,13 +1,21 @@
+@import "../../vars";
+
+
 .main{
     &_title{
+        margin-bottom: 100px;
         text-align: center;
         font-size: 2.5em;
     }
 }
 
 .main2_block3{
-    margin-top: 20px;
-    margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        gap: 40px;
   }
   .main2_block3_title{
     text-align: center;
@@ -16,45 +24,55 @@
   .main2_block3_numero{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around ;
+    justify-content: space-around;
+    gap: 20px;
   }
   .main2_block3_numero_box{
     display: flex;
     flex-direction: column;
-    width: 33%;
+    gap: 25px;
   }
   .numero_block{
-    margin-top: 80px;
-    margin-bottom: 35px;
-    text-align: center;
+    color: $main-bg-color;
+    display: flex;
+    justify-content: center;
+    background-color: $main-color;
+    align-self: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
       
+  }
+  .number{
+    align-self: center;
   }
   .numero_text{
       width: 300px;
       text-align: center;
       align-self: center;
   }
-  .number_span{
-    color: white;
-    background-color:#214a82;
-    padding: 23px;
-    border-radius: 50%;
-  }
+
   .main2_block3_button{
     margin-top: 80px;
     text-align: center;
   }
   .main2_block3_button_devis{
-    color: rgb(0, 0, 0);
+    color:$main-color;
     font-weight: bolder;
     padding: 10px;
     border-radius: 5px;
     background-color: #ffffff;
-    box-shadow:   #214a82 0px 54px 55px, #214a82 0px -12px 30px, #214a82 0px 4px 6px, #214a82 0px 12px 13px, #214a82 0px -3px 5px;
+    box-shadow: $main-color 0px 54px 55px, $main-color 0px -12px 30px, $main-color 0px 4px 6px, $main-color 0px 12px 13px, $main-color 0px -3px 5px;
     transition: all 0.3s ease-out;
   }
   .main2_block3_button_devis:hover{
     color: rgb(255, 255, 255);
-    background-color: #214a82;
+    background-color: $main-color;
   
+  }
+
+@media only screen and (max-width: 530px) {
+    .main2_block3_numero{
+      gap: 60px;
+    }
   }

@@ -10,6 +10,6 @@
             </p>
         </div>
     </div>
-    <img class="fleche_droite_avis" src="../assets/images/fleche-vers-le-haut.png" (click)="tournerADroite()"/>
-    <img class="fleche_gauche_avis" src="../assets/images/fleche-vers-le-haut.png" (click)="tournerAGauche()"/>
+    <img [ngClass]="{'fleche_droite_avis':true,'disparaitre':indexAvis==commentaires.length-1}" src="../assets/images/fleche-vers-le-haut.png" (click)="tournerADroite()"/>
+    <img [ngClass]="{'fleche_gauche_avis':true,'disparaitre':indexAvis==0}" src="../assets/images/fleche-vers-le-haut.png" (click)="tournerAGauche()"/>
 </div>

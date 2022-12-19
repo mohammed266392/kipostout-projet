@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { Router } from '@angular/router';
 
@@ -11,6 +11,22 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
   modaleMobileMenu : boolean = false;
   showContainer: boolean = false;
+  wasInside = false;
+
+  @HostListener('click')
+  clickInside() {
+    console.log("clicked inside");
+    this.wasInside = true;
+  }
+
+  @HostListener('document:click')
+  clickout() {
+    if (!this.wasInside) {
+      console.log("clicked outside");
+    }
+    this.wasInside = false;
+  }
+
   constructor(private router : Router) { }
 
   ngOnInit(): void {
