@@ -15,6 +15,7 @@ import { CommentaireComponent } from './commentaire/commentaire.component';
 import { PkChoisirComponent } from './pk-choisir/pk-choisir.component';
 import { DecrireTonProjetComponent } from './decrire-ton-projet/decrire-ton-projet.component';
 import { EtreRappeleComponent } from './etre-rappele/etre-rappele.component';
+import { MaintenanceComponent } from './maintenance/maintenance.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { EtreRappeleComponent } from './etre-rappele/etre-rappele.component';
     CommentaireComponent,
     PkChoisirComponent,
     DecrireTonProjetComponent,
-    EtreRappeleComponent
+    EtreRappeleComponent,
+    MaintenanceComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,65 @@
+.logo{
+
+
+    position: absolute;
+    border-radius: 20px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    animation: identifier infinite ease-in-out 3s ;
+
+}
+.block1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 2rem;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.titre, .description, .log_instagram, .cliquez{
+    text-align: center;
+}
+
+.cliquez{
+    font-size: 2rem;
+    text-decoration: underline;
+    color: #214a82;
+    margin-bottom: 30px;
+}
+.logo2{
+    height: 100px;
+}
+
+
+
+@keyframes identifier {
+    0% { 
+        top: 50%;
+        right: 50%;
+    }
+    20% {
+        top: 70%;
+        right: 50%;
+    }
+    40% {
+        top: 40%;
+        right: 70%;
+    }
+    60% {
+        top: 20%;
+        right: 30%;
+    }
+    80% {
+        top: 80%;
+        right: 70%;
+    }
+    100% {
+        top: 50%;
+        right: 50%;
+    }
+    
+}

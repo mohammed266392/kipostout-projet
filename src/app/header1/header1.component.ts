@@ -62,7 +62,7 @@ export class Header1Component implements OnInit {
     console.log("j'affiche le menu en mobile");
   }
   goToTheAcceuil(){
-    this.router.navigate(['Acceuil']);
+    this.router.navigate(['Accueil']);
   }
   goToTheDecrireProjet(){
     this.router.navigate(['Decrire-mon-projet']);

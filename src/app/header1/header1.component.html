@@ -14,8 +14,8 @@
     <div appClickStopPropagation  [ngClass]="{'header_menu-burger':true,'active':menuMobile==true}" (click)="afficheMenu()">
         <span class="header_menu-burger_bar-millieu"></span>
     </div>
-    <div [ngClass]="{'header_menu':true,'active':menuMobile==true}">
-        <div class="header_menu_items"><a class="header_menu_items_link">Accueil</a> </div>
+    <div appClickStopPropagation [ngClass]="{'header_menu':true,'active':menuMobile==true}">
+        <div  class="header_menu_items"><a [routerLink]="['/Accueil']" class="header_menu_items_link">Accueil</a> </div>
         <div class="header_menu_items"><a class="header_menu_items_link">A propos</a> </div>
         <div class="header_menu_items"><a class="header_menu_items_link">Nos produits</a></div>
         <div  appClickStopPropagation class="header_menu_items header_menu_items_realisation" (click)="nosRealisation()"><a class="header_menu_items_link">Nos réalisations</a>
