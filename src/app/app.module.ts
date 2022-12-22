@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { Header1Component } from './header1/header1.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ClickStopPropagationDirective } from './directive/click-stop-propagation.directive';
 import { CeQueVousProposeeComponent } from './ce-que-vous-proposee/ce-que-vous-proposee.component';
@@ -21,7 +20,6 @@ import { MaintenanceComponent } from './maintenance/maintenance.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    Header1Component,
     AccueilComponent,
     ClickStopPropagationDirective,
     CeQueVousProposeeComponent,

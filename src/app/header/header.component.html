@@ -11,15 +11,15 @@
             KIPOSETOU MENUISERIE
         </div>
     </div>
-    <div class="header_menu-burger" (click)="afficheMenu()">
+    <div appClickStopPropagation  [ngClass]="{'header_menu-burger':true,'active':menuMobile==true}" (click)="afficheMenu()">
         <span class="header_menu-burger_bar-millieu"></span>
     </div>
-    <div class="header_menu" (click)="afficheMenuMobile()">
-        <div class="header_menu_items"><a class="header_menu_items_link">Accueil</a> </div>
+    <div appClickStopPropagation [ngClass]="{'header_menu':true,'active':menuMobile==true}">
+        <div  class="header_menu_items"><a [routerLink]="['/Accueil']" class="header_menu_items_link">Accueil</a> </div>
         <div class="header_menu_items"><a class="header_menu_items_link">A propos</a> </div>
         <div class="header_menu_items"><a class="header_menu_items_link">Nos produits</a></div>
-        <div  class="header_menu_items header_menu_items_realisation" (click)="nosRealisation($event)"><a class="header_menu_items_link">Nos réalisations</a>
-            <div class="header_menu_items_realisation_content">
+        <div  appClickStopPropagation class="header_menu_items header_menu_items_realisation" (click)="nosRealisation()"><a class="header_menu_items_link">Nos réalisations</a>
+            <div [ngClass]="{'header_menu_items_realisation_content':true, 'active':buttonRealisation==true}">
                 <a appClickStopPropagation class="header_menu_items_realisation_content-onglet">Volets</a>
                 <a appClickStopPropagation class="header_menu_items_realisation_content-onglet">Fenêtres</a>
                 <a appClickStopPropagation class="header_menu_items_realisation_content-onglet">Portes</a>
@@ -33,8 +33,6 @@
         <div class="header_menu_items"><a class="header_menu_items_link">Espace pro</a> </div>
         <div class="header_menu_items"><a class="header_menu_items_link">Blog</a> </div>
         <div class="header_menu_items"><a class="header_menu_items_link">Contact</a> </div>
-        <div class="header_menu_items hidden"><a class="header_menu_items_link-projet ">DÉCRIRE MON PROJET</a></div>
-        <div class="header_menu_items hidden"><a class="header_menu_items_link-rappel">ÊTRE RAPPELÉ</a></div>
     </div>
     <div class="header_droite">
         <div class="header_droite_bouton header_droite_bouton_projet" (click)="goToTheDecrireProjet()">DÉCRIRE MON PROJET</div>
