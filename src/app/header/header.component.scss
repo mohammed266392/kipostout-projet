@@ -20,11 +20,9 @@
 @media only screen and (min-width: 992px) {
 
     .header_menu-burger{
-    display: none;
-}
+        display: none;
+    }
 .header{
-    
-    //overflow: hidden;
     
     &_fabrication_france_bleu{
         position: absolute;
@@ -109,20 +107,14 @@
                         font-size: 1.1rem;
                     }
                 }
-                &_content.active{
-                    display: flex;
-                }
             }
             
             
         }
-        &_items.hidden{
-            display: none;
-        }
-        
-
     }
-
+    &_menu.click-nos-realisations .header_menu_items_realisation_content{
+        display: flex;
+    }
     &_droite{
         display: flex;
         font-size: 0.8rem;
@@ -149,6 +141,7 @@
 }
 
 @media only screen and (max-width: 992px) {
+
 
     .header{
         position: sticky;
@@ -244,9 +237,6 @@
     
         }
        
-        &_menu.active.realisation-active{
-            width: 350px;
-        }
         &_menu{
             position: absolute;
             right: 0px;
@@ -262,48 +252,28 @@
             color: white;
             overflow: hidden;
             transition: width 0.5s ease-in-out;
-            
-            &_items.realisation-active{
-                margin-left: calc(100% - 166px);
-            }
-            &_items.realisation-active{
-                margin-left: calc(100% - 166px);
-            }
 
             &_items{
+                display: flex;
+                align-items: center;
                 height: 30px;
                 white-space: nowrap;
                 padding-left: 10px;
                 cursor: pointer;
-                transition: margin 0.5s ease-in-out;
+                transition: padding-left 0.5s ease-in-out;
                 &_realisation{
                     position: relative;
                     &_content{
                         display: none;
-                    }
-                    &_content.active{
-                       
-                        display: flex;
                         flex-direction: column;
-                        //gap: 10px;
+                        align-items: center;
                         position: absolute;
-                        right: 100%;
+                        right: 170px;
                         bottom: -144px;
-                        height: 255px;
+                        height: 243px;
                         justify-content: space-between;
                     }
-                    &_content.active &_content-onglet{
-                        padding-top: 5px;
-                        padding-bottom: 5px;
-                        flex-grow: 1;
-                        margin: auto;
-                    }
-                    
-                }
-                
-                &_link.active{
-                    font-size: 1.2em;
-                    color: #f6c546;
+                   
                 }
                
                 &_link-projet{
@@ -318,13 +288,37 @@
                     padding: 2px;
                 }
             }
+            
            
         }
         &_menu.active{
             width: 210px;
         }
+        &_menu.active.click-nos-realisations .header_menu_items{
+            padding-left: 185px;
+        }
+        &_menu.active.click-nos-realisations{
+            width: 330px;
+        }
+        &_menu.active.click-nos-realisations .header_menu_items_realisation_content{
+            display: flex;
+        }
+        &_menu.active.click-nos-realisations .header_menu_items_link_realisation{
+            font-size: 1.2em;
+            color: #f6c546;
+        }
+
         &_droite{
             display: none;
         }
     }
+    .header_menu_wrapper{
+        position: absolute;
+        right: 0px;
+        top: 100%;
+    }
+    .item_click{
+        padding-left: 100px;
+    }
+    
 }
