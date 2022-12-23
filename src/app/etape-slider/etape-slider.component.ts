@@ -16,7 +16,7 @@ export class EtapeSliderComponent implements OnInit {
 
   constructor(private etapeService : EtapeService) {
     this.etapes = etapeService.initalisationEtapes();
-    // this.initialisationEtapeTop();
+    this.initialisationEtapeTop();
   }
 
   ngOnInit(): void {
