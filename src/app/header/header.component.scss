@@ -272,6 +272,7 @@
                         bottom: -144px;
                         height: 243px;
                         justify-content: space-between;
+                        
                     }
                    
                 }
@@ -321,4 +322,16 @@
         padding-left: 100px;
     }
     
+}
+
+
+@media only screen and (max-width: 520px) {
+
+    .header_menu-burger,.header_menu_items {
+        cursor: initial;
+    }
+    a{
+        cursor: inherit;
+    }
+
 }
