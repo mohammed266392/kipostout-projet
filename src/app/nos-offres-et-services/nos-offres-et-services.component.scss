@@ -1,0 +1,60 @@
+@import "./../../vars.scss";
+
+.main{
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.311);
+    height: 1215px;
+    position: relative;
+    &_title{
+        position: absolute;
+        top: 0;
+        font-size: 2em;
+        color: $main-color;
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+    &_component{
+        position: absolute;
+        background-color: rgba(162, 195, 85, 0.776);
+        right: 50%;
+        top: 70px;
+        width: 69%;
+        height: 456px;
+        transform: translate(50%, 0);
+    }
+    &_photo1{
+        position: absolute;
+        right: 5%;
+        top: 191px;
+        background-image: url("./../../assets/images/composant_nos_offres_et_services_1x200px.png");
+        background-size: cover;
+        height: 267px;
+        width: 250px;
+    }   
+    &_photo2{
+        position: absolute;
+        z-index: -1;
+        background-image: url("./../../assets/images/composant_nos_offres_et_services_2x200px.png");
+        background-size: cover;
+        height: 263px;
+        width: 225px;
+        left: 5%;
+        top: -46px;
+    }
+    &_photo3{
+        position: absolute;
+        background-image: url("./../../assets/images/composant_nos_offres_et_services_3.png");
+        background-size: cover;
+        bottom: 210px;
+        height: 297px;
+        width: 290px;
+    }
+    &_background{
+        position: absolute;
+        background-color: #214a82;
+        height: 902px;
+        width: 100%;
+        top: 275px;
+        z-index: -2;
+    }
+}

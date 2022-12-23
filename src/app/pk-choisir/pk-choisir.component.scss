@@ -62,9 +62,9 @@
     padding: 10px;
     border-radius: 5px;
     background-color: #ffffff;
-    box-shadow: $main-color 0px 54px 55px, $main-color 0px -12px 30px, $main-color 0px 4px 6px, $main-color 0px 12px 13px, $main-color 0px -3px 5px;
+    box-shadow: $main-color 0px 1px 1px, $main-color 0px -12px 30px, $main-color 0px 4px 6px, $main-color 0px 12px 13px, $main-color 0px -3px 5px;
     transition: all 0.3s ease-out;
-  }
+      }
   .main2_block3_button_devis:hover{
     color: rgb(255, 255, 255);
     background-color: $main-color;

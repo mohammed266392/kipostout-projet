@@ -15,6 +15,7 @@ import { PkChoisirComponent } from './pk-choisir/pk-choisir.component';
 import { DecrireTonProjetComponent } from './decrire-ton-projet/decrire-ton-projet.component';
 import { EtreRappeleComponent } from './etre-rappele/etre-rappele.component';
 import { MaintenanceComponent } from './maintenance/maintenance.component';
+import { NosOffresEtServicesComponent } from './nos-offres-et-services/nos-offres-et-services.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MaintenanceComponent } from './maintenance/maintenance.component';
     PkChoisirComponent,
     DecrireTonProjetComponent,
     EtreRappeleComponent,
-    MaintenanceComponent
+    MaintenanceComponent,
+    NosOffresEtServicesComponent
   ],
   imports: [
     BrowserModule,
