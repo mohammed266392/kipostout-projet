@@ -11,6 +11,7 @@ export class EtapeService {
   constructor() { }
 
   initalisationEtapes() : Array<Etape> {
+    this.etapes = [];
     let etapePosition = 0;
         let etapeTitle="";
         let etapeUnderTitle="";

@@ -16,10 +16,12 @@ export class EtapeSliderComponent implements OnInit {
 
   constructor(private etapeService : EtapeService) {
     this.etapes = etapeService.initalisationEtapes();
-    this.initialisationEtapeTop();
+    // this.initialisationEtapeTop();
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log("j'initialise le component EtapeSliderComponent ")
+  }
 
   initialisationEtapeTop(){
     for (let index = 0; index < this.etapes.length; index++) {

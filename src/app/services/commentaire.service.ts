@@ -11,6 +11,7 @@ export class CommentaireService {
   constructor() { }
 
   initalisationCommentaire() : Array<Commentaire> {
+    this.commentaires = [];
     for (let index = 0; index < 5; index++) {
       this.commentaires.push(new Commentaire(index,"Raki","Mohammed","mohammed2663","Très satisfait par la qualité du service.",4));
     }
