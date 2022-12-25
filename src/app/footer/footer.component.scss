@@ -1,0 +1,43 @@
+@import "./../../vars.scss";
+
+.main{
+    background-color: $main-color;
+    display: flex;
+    justify-content: space-around;
+    &_gauche{
+        &_logo{
+            background-image: url("./../../assets/images/LOGO_KIPOSETOU.png");
+            background-size:cover;
+            height: 40px;
+            width: 70px;
+        }
+    }
+    &_milieu{
+        background-color: antiquewhite;
+        &_adresse-email{
+            background-color: blueviolet;
+            height: 40px;
+            width: 70px;
+        }
+        &_snap{
+            background-image: url("./../../assets/images/snapchat.png");
+            background-size:cover;
+            background-color: rgb(255 242 0);
+            height: 13px;
+            width: 13px;
+        }
+        &_instagram{
+            background-color: rgb(255, 255, 255);
+            height: 40px;
+            width: 70px;
+            
+        }
+        &_linkedIn{
+            background-color: rgb(96, 90, 102);
+            height: 40px;
+            width: 70px;
+        }
+    }
+}
+
+

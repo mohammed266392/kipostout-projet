@@ -16,6 +16,7 @@ import { DecrireTonProjetComponent } from './decrire-ton-projet/decrire-ton-proj
 import { EtreRappeleComponent } from './etre-rappele/etre-rappele.component';
 import { MaintenanceComponent } from './maintenance/maintenance.component';
 import { NosOffresEtServicesComponent } from './nos-offres-et-services/nos-offres-et-services.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NosOffresEtServicesComponent } from './nos-offres-et-services/nos-offre
     DecrireTonProjetComponent,
     EtreRappeleComponent,
     MaintenanceComponent,
-    NosOffresEtServicesComponent
+    NosOffresEtServicesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
