@@ -1,43 +1,74 @@
 @import "./../../vars.scss";
 
 .main{
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: $main-color;
     display: flex;
     justify-content: space-around;
+    font-size: 0.8em;
+    color: $main-bg-color;
+
+    &_droite,&_milieu,&_gauche{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+
     &_gauche{
+        width: 300px;
+        &_title{
+            
+            
+        }
         &_logo{
             background-image: url("./../../assets/images/LOGO_KIPOSETOU.png");
             background-size:cover;
             height: 40px;
-            width: 70px;
+            width: 72px;
         }
     }
     &_milieu{
-        background-color: antiquewhite;
+        width: 300px;
         &_adresse-email{
-            background-color: blueviolet;
-            height: 40px;
-            width: 70px;
+            font-size: 0.7em;
         }
-        &_snap{
-            background-image: url("./../../assets/images/snapchat.png");
-            background-size:cover;
-            background-color: rgb(255 242 0);
-            height: 13px;
-            width: 13px;
+        &_reseau{
+            display: flex;
+            justify-content: space-around;
+            &_snap{
+                &_svg{
+                    background-color: #d9d320;
+                    border-radius: 50%;
+                }
+            }
+            &_instagram{
+                &_svg{
+                    background-color: #ffffff;
+                    border-radius: 50%;
+                }
+            }
+            // &_linkedIn{
+            //     &_svg{
+                    
+            //     }
+            // }
         }
-        &_instagram{
-            background-color: rgb(255, 255, 255);
-            height: 40px;
-            width: 70px;
-            
-        }
-        &_linkedIn{
-            background-color: rgb(96, 90, 102);
-            height: 40px;
-            width: 70px;
-        }
+        
     }
+    &_haut-page{
+        position: absolute;
+    }
+}
+.copy-rigth{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:$main-color;
+    color: $main-bg-color;
+    text-align: center;
 }
 
 
