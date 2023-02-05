@@ -48,6 +48,7 @@
         }
     }
     &_mission{
+        // color: $main-bg-color;
         color: $main-bg-color;
         position: absolute;
         width: 318px;
@@ -59,7 +60,7 @@
         gap: 40px;
         &_paragraphe1{
             font-weight: 600;
-            color: #b7343f;
+            color: white
         }
         
         &_button{
@@ -110,7 +111,7 @@
     }
     &_background{
         position: absolute;
-        background-color: #214a82;
+        background-color: #061d2e;
         height: 765px;
         width: 100%;
         top: 416px;

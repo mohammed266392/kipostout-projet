@@ -10,7 +10,7 @@
   .main2_block4_avis_title{
     text-align: center;
     font-size: 2.5rem;
-    margin-top: 60px;
+    margin-top: 110px;
     margin-bottom: 20px;
   }
   .main2_block4_avis_box{
@@ -84,6 +84,9 @@
 }
 
 @media only screen and (max-width: 530px) {
+    .main2_block4_avis_title{
+      margin-top: 160px;
+    }
 
     .main2_block4_avis_box{
         width: 250px;

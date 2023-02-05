@@ -17,6 +17,7 @@ import { EtreRappeleComponent } from './etre-rappele/etre-rappele.component';
 import { MaintenanceComponent } from './maintenance/maintenance.component';
 import { NosOffresEtServicesComponent } from './nos-offres-et-services/nos-offres-et-services.component';
 import { FooterComponent } from './footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [EtapeService],
   bootstrap: [AppComponent]
