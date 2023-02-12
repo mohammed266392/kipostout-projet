@@ -16,6 +16,7 @@
     }
     &_component{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         position: absolute;
         background-color: rgb(226, 226, 226);
@@ -25,11 +26,22 @@
         width: 69%;
         height: 456px;
         transform: translate(50%, 0);
+
+
+        &_description{
+            text-align: center;
+            width: 530px;
+            display: flex;
+            align-self: center;
+            margin-top: 15px;
+        }
+
         &_container{
             margin-right: 40px;
             margin-left: 22px;
             display: flex;
             flex-wrap: wrap;
+            height: 100%;
             &_item{
                 width: 50%;
                 display: flex;
@@ -120,6 +132,10 @@
 }
 
 @media only screen and (max-width: 1000px) {
+    .main_component_description{
+        font-size: 13px;
+        width: 430px;
+    }
     .main_photo2{
         left: 0%;
         top: 45px;
@@ -146,6 +162,11 @@
     }
 }
 @media only screen and (max-width: 520px) {
+    .main_component_description{
+        font-size: 12px;
+        width: 350px;
+    }
+
     .main_component{
         width: 100%;
     }
