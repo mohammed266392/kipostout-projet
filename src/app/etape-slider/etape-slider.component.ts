@@ -15,7 +15,8 @@ export class EtapeSliderComponent implements OnInit {
   heigthContainerSlider = "0px";
 
   constructor(private etapeService : EtapeService) {
-    this.etapes = etapeService.initalisationEtapes();
+    // this.etapes = etapeService.initalisationEtapes();
+    this.etapes = etapeService.initalisationEtapesLoan();
     this.initialisationEtapeTop();
   }
 
