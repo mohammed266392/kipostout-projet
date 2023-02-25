@@ -18,7 +18,8 @@
         right: 97px;
         height: 577px;
         width: 757px;
-        background-image: url("./../../assets/images/istockphoto-1362214275-1024x1024.jpg");
+        // background-image: url("./../../assets/images/istockphoto-1362214275-1024x1024.jpg");
+        background-image: url("./../../assets/images/image_loan3.jpg");
         background-size:cover;
     }
     &_container{
@@ -127,6 +128,7 @@
 @media only screen and (max-width: 820px) {
     .main_img{
         right: 0px;
+        width: 65%;
     }
     
     .main_container_position{

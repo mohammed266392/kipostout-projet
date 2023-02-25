@@ -8,9 +8,7 @@ import { MaintenanceComponent } from './maintenance/maintenance.component';
 const routes: Routes = [
 
   {path: '', redirectTo: 'Accueil', pathMatch:"full"},
-  {path: 'Etre-rappele', component : EtreRappeleComponent},
   {path: 'Accueil', component : AccueilComponent},
-  {path: 'Decrire-mon-projet', component : DecrireTonProjetComponent},
   {path: '**', component : MaintenanceComponent}
 ];
 

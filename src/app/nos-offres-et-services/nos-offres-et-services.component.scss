@@ -98,7 +98,8 @@
         position: absolute;
         right: 5%;
         top: 287px;
-        background-image: url("./../../assets/images/composant_nos_offres_et_services_1.png");
+        // background-image: url("./../../assets/images/composant_nos_offres_et_services_1.png");
+        background-image: url("./../../assets/images/image_loan1.jpg");
         background-size: cover;
         height: 267px;
         width: 250px;
@@ -106,7 +107,8 @@
     &_photo2{
         position: absolute;
         z-index: -1;
-        background-image: url("./../../assets/images/composant_nos_offres_et_services_2.png");
+        // background-image: url("./../../assets/images/composant_nos_offres_et_services_2.png");
+        background-image: url("./../../assets/images/image_loan4.jpg");
         background-size: cover;
         height: 263px;
         width: 225px;
@@ -115,11 +117,13 @@
     }
     &_photo3{
         position: absolute;
-        background-image: url("./../../assets/images/composant_nos_offres_et_services_3.png");
+        // background-image: url("./../../assets/images/composant_nos_offres_et_services_3.png");
+        background-image: url("./../../assets/images/image_loan3.jpg");
         background-size: cover;
         bottom: 210px;
         height: 297px;
         width: 290px;
+        background-position-x: center;
     }
     &_background{
         position: absolute;
