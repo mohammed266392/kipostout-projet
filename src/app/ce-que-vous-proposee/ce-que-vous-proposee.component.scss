@@ -1,0 +1,120 @@
+@import "../../vars";
+
+.sous_icon_texte{
+    text-align: center;
+    color: black;
+    font-style: normal;
+    font-weight: 300; 
+    overflow: hidden;
+    height: 0px;
+    transition: height 0.5s ease-out;
+    pointer-events: none;
+    //border: 1px solid rgb(177, 2, 2);
+    width: 86%;
+    align-self: center;
+    margin-top: 23px;
+  }
+
+.sous_icon_texte.active{
+  height: 210px;
+}
+
+.sous_icon_plus{
+  cursor: pointer;
+  margin: auto;
+  margin-top: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.sous_icon_plus.active{
+  background-color: #b3b3b3;
+  border-radius: 20px;
+}
+
+
+.sous_icon{
+  margin: auto;
+  height: 30px;
+}
+
+.icon{
+  margin: auto;
+  width:60px;
+  height:60px;
+}
+
+.main2_container_icon_fenetre,.main2_container_icon_outils,.main2_container_icon_localisation{
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid black;
+  align-self: flex-start;
+  gap: 7px;
+  text-align: center;
+  width: 33%;
+}
+//   .main2_container_icon{
+//     margin-bottom: 250px;
+//   }
+  
+  .main2_container_icon{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+    // border: 1px solid green;
+  }
+  
+  
+  
+  
+  .main2_container_proposer{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @media only screen and (min-width:0px) and (max-width:500px){
+
+    .main2_container_icon_fenetre,.main2_container_icon_outils,.main2_container_icon_localisation{
+    
+      width: 100%;
+    }
+
+
+
+    .main2_container_icon{
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+    .sous_icon{
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .sous_icon_plus{
+      margin-top: 0px;
+    }
+    .sous_icon_texte.active{
+      height: 90px;
+    }
+
+  }
+
+  
+  @media only screen and (min-width: 982px) {
+
+  }
+
+  @media only screen and (max-width: 982px) {
+    .main2{
+        font-size: 0.8em;
+    }
+    .icon{
+        margin: auto;
+        width:50px;
+        height:50px;
+      }
+
+}

@@ -1,0 +1,191 @@
+@import "./../../vars.scss";
+
+.main{
+    margin-top: 60px;
+    // background-color: rgba(0, 0, 0, 0.311);
+    height: 1215px;
+    position: relative;
+    &_title{
+        position: absolute;
+        top: 40px;
+        font-size: 2.5em;
+        color: #000000;
+        right: 50%;
+        transform: translate(50%, 0);
+        width: 449px;
+    }
+    &_component{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        background-color: rgb(226, 226, 226);
+        box-shadow: rgb(255, 255, 255) 0px 7px 29px 0px;
+        right: 50%;
+        top: 153px;
+        width: 69%;
+        height: 456px;
+        transform: translate(50%, 0);
+
+
+        &_description{
+            text-align: center;
+            width: 530px;
+            display: flex;
+            align-self: center;
+            margin-top: 15px;
+        }
+
+        &_container{
+            margin-right: 40px;
+            margin-left: 22px;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+            &_item{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                &_element{
+                    font-size: 1.2em;
+                    font-weight: 500;
+                    // background-color: aquamarine;
+                }
+                &_element2{
+                    font-style: italic;
+                    // background-color: rgb(255, 236, 127)
+                }
+            }
+        }
+    }
+    &_mission{
+        // color: $main-bg-color;
+        color: $main-bg-color;
+        position: absolute;
+        width: 318px;
+        bottom: 90px;
+        right: 30%;
+        // background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        &_paragraphe1{
+            font-weight: 600;
+            color: white
+        }
+        
+        &_button{
+            
+            cursor: pointer;
+            display: flex;
+            align-self: center;
+            padding: 5px;
+            border-radius: 15px;
+            font-weight: 600;
+            background-color: $main-bg-color;
+            color: $main-color;
+            transition: background-color 0.3s ease-in-out;
+        }
+        &_button:hover{
+            box-shadow: $main-bg-color 0px 1px 1px, $main-bg-color 0px -2px 3px, $main-bg-color 0px 4px 6px, $main-bg-color 0px 2px 3px, $main-bg-color 0px -3px 5px;
+            // padding: 10px;
+            background-color: $main-color;
+            color: $main-bg-color;
+        }
+    }
+    &_photo1{
+        position: absolute;
+        right: 5%;
+        top: 287px;
+        // background-image: url("./../../assets/images/composant_nos_offres_et_services_1.png");
+        background-image: url("./../../assets/images/image_loan1.jpg");
+        background-size: cover;
+        height: 267px;
+        width: 250px;
+    }   
+    &_photo2{
+        position: absolute;
+        z-index: -1;
+        // background-image: url("./../../assets/images/composant_nos_offres_et_services_2.png");
+        background-image: url("./../../assets/images/image_loan4.jpg");
+        background-size: cover;
+        height: 263px;
+        width: 225px;
+        left: 5%;
+        top: -46px;
+    }
+    &_photo3{
+        position: absolute;
+        // background-image: url("./../../assets/images/composant_nos_offres_et_services_3.png");
+        background-image: url("./../../assets/images/image_loan3.jpg");
+        background-size: cover;
+        bottom: 210px;
+        height: 297px;
+        width: 290px;
+        background-position-x: center;
+    }
+    &_background{
+        position: absolute;
+        background-color: #061d2e;
+        height: 765px;
+        width: 100%;
+        top: 416px;
+        z-index: -2;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .main_component_description{
+        font-size: 13px;
+        width: 430px;
+    }
+    .main_photo2{
+        left: 0%;
+        top: 45px;
+    }
+    .main_photo1{
+        right: 0%;
+        width: 228px;
+    }
+    .main_photo3{
+        background-position-x: -60px;
+        width: 227px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .main_photo2{
+        display: none;
+    }
+    .main_photo1{
+        display: none;
+    }
+    .main_photo3{
+        display: none;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .main_component_description{
+        font-size: 12px;
+        width: 350px;
+    }
+
+    .main_component{
+        width: 100%;
+    }
+    .main_component_container{
+        text-align: center;
+        margin-right: 0px; 
+        margin-left: 0px;
+    }
+    .main_mission{
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+    .main_title{
+        font-size: 2em;
+        width: 350px;
+    }
+        
+}

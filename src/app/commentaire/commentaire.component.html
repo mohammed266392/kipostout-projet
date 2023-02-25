@@ -1,0 +1,15 @@
+<div class="main2_block4_avis">
+    <h2 class="main2_block4_avis_title"> Il nous font confiance</h2>
+    <div class="main2_block4_avis_box">
+        <div *ngFor="let commentaire of commentaires" class="main2_block4_avis_box_block" [ngStyle]="{'left':(commentaire.id*100)+'%', 'transition': 'left 0.5s ease-in-out'}">
+            <p class="main2_block4_avis_box_block_personne">{{commentaire.userName}}</p>
+            <p class="main2_block4_avis_box_block_texte">{{commentaire.avis}}</p>
+            <p class="main2_block4_avis_box_block_etoile">
+                <img *ngFor="let _ of [].constructor(commentaire.nbEtoile); let i = index" class="etoile_avis" src="../assets/images/etoile.png"/>
+                
+            </p>
+        </div>
+    </div>
+    <img [ngClass]="{'fleche_droite_avis':true,'disparaitre':indexAvis==commentaires.length-1}" src="../assets/images/fleche-vers-le-haut.png" (click)="tournerADroite()"/>
+    <img [ngClass]="{'fleche_gauche_avis':true,'disparaitre':indexAvis==0}" src="../assets/images/fleche-vers-le-haut.png" (click)="tournerAGauche()"/>
+</div>

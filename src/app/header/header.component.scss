@@ -1,0 +1,340 @@
+
+@import "../../vars";
+
+.header{
+    background-color: $main-bg-color;
+    width: 100%;
+    height: 53px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: 400;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.header_droite_bouton_projet, .header_droite_bouton_rappel{
+    cursor: pointer;
+}
+.header_menu_wrapper{
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .header_menu-burger{
+        display: none;
+    }
+.header{
+    
+    &_fabrication_france_bleu{
+        position: absolute;
+        background: rgb(42, 107, 178);
+        width: 100px;
+        height: 3px;
+        right: 50%;
+        transform: translate(-50%);
+    }
+    &_fabrication_france_rouge{
+        position: absolute;
+        background: rgb(178, 67, 42);
+        width: 100px;
+        height: 3px;
+        right: 50%;
+        transform: translate(150%);
+    }
+    &_fabrication_france_made_in_france{
+        position: absolute;
+        right: 50%;
+        transform: translate(50%);
+        font-size: 0.6rem;
+        color: $main-color;
+    }
+
+    &_gauche{
+        cursor: pointer;
+        display: flex;
+        &_image{
+            width: 39px;
+            align-self: center;
+            margin-left: 17px;
+            &_kiposetou{
+                width: 100%;
+            }
+        }
+        &_titre{
+            align-self: center;
+            color: $main-color;
+            margin-left: 15px;
+            font-size: 0.8rem;
+        }
+
+    }
+    .header_menu_wrapper{
+        display: flex;
+    }
+    &_menu{
+
+        all: none;
+        display: flex;
+        gap:15px;
+        align-items: stretch;
+        &_items{
+            display: flex;
+            color: $main-color;
+            white-space:nowrap;
+            cursor: pointer;
+            &_link{
+                margin: auto;
+            }
+            &_realisation{
+                position: relative;
+
+                &_content{
+                    
+                    position: absolute;
+                    display: none;
+                    top: 80%;
+                    flex-direction: column;
+                    gap: 8px;
+                    padding-top: 10px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    border-radius: 5px;
+                    background-color: white;
+
+                    &-onglet{
+                        transition: all 0.1s ease-in-out;
+                    }
+                    &-onglet:hover{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            
+            
+        }
+    }
+    &_menu.click-nos-realisations .header_menu_items_realisation_content{
+        display: flex;
+    }
+    &_droite{
+        display: flex;
+        font-size: 0.8rem;
+        gap:10px;
+        margin-right: 10px;
+        
+        &_bouton{
+            align-self: center;
+            color: $bouton1-color;
+            white-space:nowrap;
+            background-color: $bouton1-bg-color;
+            padding: 5px 4px;
+            border-radius: 8px;
+            font-weight: 300;
+        }
+        &_rappel{
+            background-color: $bouton1-bg-color;
+            padding: 5px 4px;
+            border-radius: 8px;
+            border: 1px solid $border1-color; ;
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 992px) {
+
+
+    .header{
+        position: sticky;
+        transform: scale(1);
+
+        &_menu-burger{
+            cursor: pointer;
+            width: 60px;
+            height: 100%;
+            position: relative;
+            border-radius: 15px;
+            &_bar-millieu{
+                display: block;
+                width: 80%;
+                height: 2px;
+                background-color: $main-color;
+                position: absolute;
+                top: 50%;
+                right: 50%;
+                transform: translate(50%, -50%); 
+            }
+            &_bar-millieu::before, &_bar-millieu::after{
+                content: '';
+                width: 100%;
+                height: 2px;
+                background-color: $main-color;
+                position: absolute;
+                transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1)
+            }
+
+            &_bar-millieu::before{
+                transform: translateY(-10px);
+            }
+            &_bar-millieu::after{
+                transform: translateY(10px);
+            }
+        }
+        &_menu-burger.active &_menu-burger_bar-millieu{
+            background-color: transparent;
+        }
+        
+        &_menu-burger.active &_menu-burger_bar-millieu::before{
+            transform: translateY(0px) rotate(-45deg);
+        }
+        
+        &_menu-burger.active &_menu-burger_bar-millieu::after{
+            transform: translateY(0px) rotate(45deg);
+        }
+
+        &_fabrication_france_bleu{
+            position: absolute;
+            background: rgb(42, 107, 178);
+            width: 100px;
+            top: 0;
+            height: 3px;
+            right: 50%;
+            transform: translate(-50%);
+        }
+        &_fabrication_france_rouge{
+            position: absolute;
+            background: rgb(178, 67, 42);
+            width: 100px;
+            top: 0px;
+            height: 3px;
+            right: 50%;
+            transform: translate(150%);
+        }
+        &_fabrication_france_made_in_france{
+            position: absolute;
+            right: 50%;
+            top: 0px;
+            transform: translate(50%);
+            font-size: 0.6rem;
+            color: $main-color;
+        }
+
+        &_gauche{
+            display: flex;
+            &_image{
+                width: 39px;
+                align-self: center;
+                margin-left: 17px;
+                &_kiposetou{
+                    width: 100%;
+                }
+            }
+            &_titre{
+                align-self: center;
+                color: $main-color;
+                margin-left: 15px;
+                font-size: 0.8rem;
+            }
+    
+        }
+       
+        &_menu{
+            position: absolute;
+            right: 0px;
+            top: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: stretch;
+            height: 70vh;
+            width: 0%;
+            background-color: rgba(0, 0, 0, 0.784);
+            border-radius: 2px;
+            color: white;
+            overflow: hidden;
+            transition: width 0.5s ease-in-out;
+
+            &_items{
+                display: flex;
+                align-items: center;
+                height: 30px;
+                white-space: nowrap;
+                padding-left: 10px;
+                cursor: pointer;
+                transition: padding-left 0.5s ease-in-out;
+                &_realisation{
+                    position: relative;
+                    &_content{
+                        display: none;
+                        flex-direction: column;
+                        align-items: center;
+                        position: absolute;
+                        right: 170px;
+                        bottom: -55px;
+                        height: 243px;
+                        justify-content: space-between;
+                        
+                    }
+                   
+                }
+               
+                &_link-projet{
+                    border-radius: 2px;
+                    background-color: white;
+                    color: black;
+                    padding: 2px;
+                }
+                &_link-rappel{
+                    border-radius: 2px;
+                    border: 1px solid white;
+                    padding: 2px;
+                }
+            }
+            
+           
+        }
+        &_menu.active{
+            width: 210px;
+        }
+        &_menu.active.click-nos-realisations .header_menu_items{
+            padding-left: 185px;
+        }
+        &_menu.active.click-nos-realisations{
+            width: 330px;
+        }
+        &_menu.active.click-nos-realisations .header_menu_items_realisation_content{
+            display: flex;
+        }
+        &_menu.active.click-nos-realisations .header_menu_items_link_realisation{
+            font-size: 1.2em;
+            color: #f6c546;
+        }
+
+        &_droite{
+            display: none;
+        }
+    }
+    .header_menu_wrapper{
+        position: absolute;
+        right: 0px;
+        top: 100%;
+    }
+    .item_click{
+        padding-left: 100px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 520px) {
+
+    .header_menu-burger,.header_menu_items {
+        cursor: initial;
+    }
+    a{
+        cursor: inherit;
+    }
+
+}

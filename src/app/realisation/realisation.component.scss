@@ -1,0 +1,114 @@
+@import "../../vars";
+
+.realisation{
+    height: 800px;
+    // background-color: rgb(223, 64, 64);
+    // border: 3px solid green;
+    position: relative;
+    &_block{
+        // background-color: rgb(0, 0, 0);
+        // color: white;
+        background-color: #061d2e;
+        
+        color: $main-bg-color;
+        display: flex;
+        flex-direction: column;
+        margin-top: 110px;
+        gap: 31px;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        &_titre{
+            font-size: 2.2em;
+            font-weight: 300;
+            padding-left: 6%;
+        }
+        &_decouvrir{
+            width: 440px;
+            padding-left: 6%;
+
+            &_button_link{
+                background-color: $main-bg-color;
+                color: $main-color;
+                padding: 5px 15px;
+                border-radius: 21px;
+                font-weight: 500;
+                margin-left: 6%;
+            
+            }
+        }
+        
+    }
+    &_img_fenetre1{
+
+        position: absolute;
+        left: 5%;
+        top: 296px;
+        z-index: 0;
+        &_img1{
+            width: 263px;
+            height: 200px;
+        }
+    }
+    &_img_fenetre2{
+
+        position: absolute;
+        right: 5%;
+        top: 14px;
+        z-index: 2;
+        &_img2{
+            width: 263px;
+            height: 200px;
+        }
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    //@media only screen and (min-width: 600px) {
+    .realisation_block{
+        font-size: 0.8em;
+        &_decouvrir{
+            width: 350px;
+        }
+    }    
+
+    .realisation_img_fenetre2_img2{
+        width: 200px;
+        height: 145px;
+    }
+    .realisation_img_fenetre1_img1{
+        width: 240px;
+        height: 160px;
+    }
+
+}
+
+@media only screen and (max-width: 530px) {
+
+    .realisation{
+        height: 550px;
+    }
+    .realisation_block_decouvrir{
+        width: 310px;
+    }
+    .realisation_img_fenetre2_img2{
+        width: 146px;
+        height: 100px;
+    }
+    .realisation_img_fenetre1_img1{
+        width: 200px;
+        height: 110px;
+    }
+
+    .realisation_img_fenetre2{
+        top: 25px;
+    }
+
+
+}
+
+

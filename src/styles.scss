@@ -1,4 +1,116 @@
 /* You can add global styles to this file, and also import other style files */
+/* html { 
+  height: 100%; 
+} 
+
+body {
+  min-height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+} */
+/* You can add global styles to this file, and also import other style files */
+/* @import '~bootstrap/dist/css/bootstrap.min.css'; */
+// @font-face {
+//     font-family: Sora;
+//     src: url(assets/font/Sora-Bold.ttf) format('truetype');
+//     font-weight: bold;
+//     font-style: normal;
+    // src: url(assets/font/Sora-ExtraBold.ttf) format('truetype');
+    // src: url(assets/font/Sora-ExtraLight.ttf) format('truetype');
+    // src: url(assets/font/Sora-Light.ttf) format('truetype');
+    // src: url(assets/font/Sora-Medium.ttf) format('truetype');
+    //src: url(assets/font/Sora-Regular.ttf) format('truetype');
+    // src: url(assets/font/Sora-SemiBold.ttf) format('truetype');
+    // src: url(assets/font/Sora-Thin.ttf) format('truetype');
+    //src: url(assets/font/Sora-VariableFont_wght.ttf) format('truetype')
+// }
+
+// @font-face {
+//     font-family: Sora ;
+//     src: url(assets/font/Sora-ExtraBold.ttf) format('truetype');
+//     font-weight: bolder;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: Sora ;
+//     src: url(assets/font/Sora-ExtraLight.ttf) format('truetype');
+//     font-weight:lighter;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: Sora ;
+//     src: url(assets/font/Sora-Light.ttf) format('truetype');
+//     font-weight: 300;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: Sora ;
+//     src: url(assets/font/Sora-Medium.ttf) format('truetype');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: Sora ;
+//     src: url(assets/font/Sora-Regular.ttf) format('truetype');
+//     font-weight:800;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: Sora ;
+//     src: url(assets/font/Sora-SemiBold.ttf) format('truetype');
+//     font-weight: bold;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: Sora ;
+//     src: url(assets/font/Sora-Thin.ttf) format('truetype');
+//     font-weight: 100;
+//     font-style: normal;
+// }
+
+// .Sora{
+//     font-family: Sora;
+// }
+
+
+@font-face {
+    font-family: NunitoSans ;
+    src: url(assets/font/Nunito/NunitoSans-ExtraBold.ttf) format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+@font-face {
+    font-family: NunitoSans ;
+    src: url(assets/font/Nunito/NunitoSans-Bold.ttf) format('truetype');
+    font-weight:bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: NunitoSans ;
+    src: url(assets/font/Nunito/NunitoSans-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: NunitoSans ;
+    src: url(assets/font/Nunito/NunitoSans-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style:normal;
+}
+@font-face {
+    font-family: NunitoSans ;
+    src: url(assets/font/Nunito/NunitoSans-ExtraLight.ttf) format('truetype');
+    font-weight:200;
+    font-style: normal;
+}
+
+
+.NunitoSans{
+    font-family: NunitoSans;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,6 +130,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	color: inherit;
+	text-decoration:none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -26,6 +140,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    font-family: NunitoSans,'Sora', Arial, Helvetica, sans-serif;
 }
 ol, ul {
 	list-style: none;

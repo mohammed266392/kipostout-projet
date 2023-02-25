@@ -1,0 +1,29 @@
+
+<div class="title">Et concrètement…
+    Ça se passe comment ?
+</div>
+<div class="main">
+    <div class="main_img"></div>
+    <div class="main_container">
+        <div  class="main_container_slider">
+            <div class="main_container_slider_container" >
+                <div *ngFor="let etape of etapes" class="main_container_slider_container_div" (click)="changePosition(etape.etapePosition)">
+                    <div  [ngClass]="{'cercle':true,'remplit':this.position==etape.etapePosition}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_container_position"  (scroll)="fingerSlide($event)">
+            <div  *ngFor="let etape of etapes" ngClass="main_container_position_content" [ngStyle]="{'top' : etapesTop[etape.etapePosition], 'transition': 'top 0.5s ease-in-out'}">
+                <div class="main_container_position_content_etape">{{etape.etapeTitle}}</div>
+                <div class="main_container_position_content_ligne"></div>
+                <div class="main_container_position_content_etape-title">{{etape.etapeUnderTitle}}</div>
+                <div class="main_container_position_content_etape-description">{{etape.etapeDescription}}</div>
+                <div *ngIf="etape.etapeButton" ngClass="main_container_position_content_etape-button">{{etape.etapeButton}}</div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
