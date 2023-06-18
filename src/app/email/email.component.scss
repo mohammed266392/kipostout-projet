@@ -1,0 +1,116 @@
+
+.main{
+    &_contact{
+        position: relative;
+        height: 300px;
+        &_img{
+            background-image: url("./../../assets/images/fenetre_page_contact.jpg");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position-y: -160px;
+            background-color: #4e4e4e;
+            background-blend-mode: overlay;
+        }
+        &_title{
+            position: absolute;
+            left: 50%;
+            top: 120px;
+            transform: translate(-50%, -50%);
+            font-size: 4em;
+            background-color: #ffffffc9;
+            border-radius: 5px;
+            padding: 10px 100px;
+            font-weight: 200;
+        }
+    }
+    &_information_enveloppe{
+        position: relative;
+        height: 100px;
+        &_block{
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            background-color: #000000;
+            height: 100px;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            padding: 10px 42px;
+            width: 50%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            &_bureau{
+                text-align: center;
+            }
+            &_adresse{
+                text-align: center;
+            }
+        }
+        
+    }
+    &_formulaire{
+        &_texte{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 500px;
+            height: 100px;
+            margin: auto; 
+            &_p1{
+                text-align: center;
+            }
+            &_p2{
+                text-align: center;
+            }
+            &_email{
+                display: flex;
+                justify-content: center;
+                &_bouton{
+                    text-align: center;
+                    background-color: #000000;
+                    color : white;
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .main_contact{
+        height: 250px;
+    }
+    .main_contact_title{
+        font-size: 3em;
+        top: 80px;
+        padding: 2px 70px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main_information_enveloppe_block{
+        font-size: 0.8em;
+    }
+    .main_contact_img{
+        background-position-y:0px;
+    }
+
+    .main_contact_title{
+        font-size: 2em;
+    }
+
+    .main_contact{
+        height: 150px;
+    }
+    .main_contact_title{
+        font-size: 2em;
+        top: 40px;
+    }
+
+}

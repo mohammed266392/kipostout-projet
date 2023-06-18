@@ -16,6 +16,7 @@ import { EtreRappeleComponent } from './etre-rappele/etre-rappele.component';
 import { MaintenanceComponent } from './maintenance/maintenance.component';
 import { NosOffresEtServicesComponent } from './nos-offres-et-services/nos-offres-et-services.component';
 import { FooterComponent } from './footer/footer.component';
+import { EmailComponent } from './email/email.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FooterComponent } from './footer/footer.component';
     EtreRappeleComponent,
     MaintenanceComponent,
     NosOffresEtServicesComponent,
-    FooterComponent
+    FooterComponent,
+    EmailComponent
   ],
   imports: [
     BrowserModule,
