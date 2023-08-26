@@ -1,0 +1,25 @@
+.main{
+    display: flex;
+    flex-direction: column;
+
+    &_block{
+        display: flex;
+        &_image{
+            &_avant{
+                &_img{
+                    height: 200px;
+                    width: 200px;
+                }
+
+            }
+
+            &_apres{
+                &_img{
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+
+        }
+    }
+}

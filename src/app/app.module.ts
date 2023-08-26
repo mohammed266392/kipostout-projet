@@ -17,6 +17,7 @@ import { MaintenanceComponent } from './maintenance/maintenance.component';
 import { NosOffresEtServicesComponent } from './nos-offres-et-services/nos-offres-et-services.component';
 import { FooterComponent } from './footer/footer.component';
 import { EmailComponent } from './email/email.component';
+import { PageNosRealisationComponent } from './page-nos-realisation/page-nos-realisation.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { EmailComponent } from './email/email.component';
     MaintenanceComponent,
     NosOffresEtServicesComponent,
     FooterComponent,
-    EmailComponent
+    EmailComponent,
+    PageNosRealisationComponent
   ],
   imports: [
     BrowserModule,
