@@ -1,25 +1,72 @@
 .main{
     display: flex;
     flex-direction: column;
-
+    gap: 10px;
     &_block{
+        margin: auto;
         display: flex;
         &_image{
-            &_avant{
-                &_img{
-                    height: 200px;
-                    width: 200px;
+            &_fix{
+                overflow: hidden;
+                height: 200px;
+                width: 200px;
+                position: relative;
+                border-radius: 6px;
+                &_lunette{
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color:rgb(250 255 230 / 19%);
+                    z-index: 1;
                 }
-
+                &_moving{
+                    display: flex;
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    animation: moveLeft 5s ease-out infinite alternate;
+                    &_avant{
+                        &_img{
+                            height: 200px;
+                            width: 200px;
+                        }
+        
+                    }
+        
+                    &_apres{
+                        &_img{
+                            height: 200px;
+                            width: 200px;
+                        }
+                    }
+                }
             }
 
-            &_apres{
-                &_img{
-                    height: 200px;
-                    width: 200px;
-                }
+
+        }
+        &_description{
+            width: 500px;
+            display: flex;
+            &_texte{
+                margin: auto;
+                width: 80%;
             }
 
         }
     }
+    &_title{
+        text-align: center;
+        font-size: 1.4rem;
+    }
 }
+
+@keyframes moveLeft {
+    0% {
+       left: 0px;
+    }
+    100% {
+       left: -200px;
+    }
+ }
